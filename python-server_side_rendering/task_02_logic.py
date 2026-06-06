@@ -25,7 +25,8 @@ def items():
     json_path = os.path.join(os.path.dirname(__file__), 'items.json')
     with open(json_path, 'r') as f:
         data = json.load(f)
-    return render_template('items.html', items=data['items'])
+    items_list = data.get('items', [])
+    return render_template('items.html', items=items_list)
 
 
 if __name__ == '__main__':
