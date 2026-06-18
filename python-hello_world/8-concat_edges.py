@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-str1 = "Python is an interpreted, interactive, object-oriented programming language that is named after Monty Python's Flying Circus"
-str2 = "Python designed by Guido van Rossum"
-str = str1[39:67] + str1[96:101] + str1[0:6]
+str = "Python is an interpreted, interactive, object-oriented programming\
+ language that combines remarkable power with very clear syntax".split()
+str = str[5] + " " + str[6] + " " + str[12] + " " + str[0]
 print(str)
