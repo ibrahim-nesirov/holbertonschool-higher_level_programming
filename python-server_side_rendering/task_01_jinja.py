@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+import logging
+from flask import Flask, render_template # type: ignore
 
 app = Flask(__name__)
 
@@ -20,4 +21,3 @@ def contact():
 
 if __name__ == '__main__':
     app.run(debug=False, port=5000)
-    
