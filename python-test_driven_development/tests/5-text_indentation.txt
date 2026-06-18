@@ -1,0 +1,27 @@
+=====================================
+How to use the text_indentation function
+=====================================
+Import the function:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Example with standard sentences:
+    >>> text_indentation("Hello. How are you? This is a test: Python is great.")
+    Hello.
+    <BLANKLINE>
+    How are you?
+    <BLANKLINE>
+    This is a test:
+    <BLANKLINE>
+    Python is great.
+
+Example with leading and trailing spaces:
+    >>> text_indentation("    Sentence one.    Sentence two?    ")
+    Sentence one.
+    <BLANKLINE>
+    Sentence two?
+
+Check if it raises TypeError for non-string inputs:
+    >>> text_indentation(12345)
+    Traceback (most recent call last):
+        ...
+    TypeError: text must be a string
